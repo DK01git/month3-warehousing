@@ -179,7 +179,7 @@ for (year, month), group in df_tx.groupby([
     df_tx["transaction_date"] = df_tx["transaction_date"].astype("datetime64[us]")
     upload_parquet(group.reset_index(drop=True), key)
 
-print(f"\n✅ Data generation complete.")
+print(f"\n Data generation complete.")
 print(f"   Stores      : {len(df_stores):,}")
 print(f"   Customers   : {len(df_customers):,}")
 print(f"   Products    : {len(df_products):,}")
