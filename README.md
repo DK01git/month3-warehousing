@@ -1,6 +1,4 @@
 # Retail Lakehouse & Data Warehouse
-**Author:** Diluksha Perera | Bistec Global Services
-**Track:** Data Engineering Training — Month 3
 **Stack:** Apache Spark · Delta Lake · PostgreSQL · MinIO · Airflow · Apache Superset · Docker
 
 ---
