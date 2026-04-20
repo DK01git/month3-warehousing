@@ -1,7 +1,5 @@
 # Month 3 Medallion Architecture Documentation
-**Author:** Diluksha Perera | Bistec Global Services
-**Track:** Data Engineering Training — Month 3
-**Date:** April 2026
+
 
 ---
 
