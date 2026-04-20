@@ -1,0 +1,26 @@
+# Jupyter
+diluksha-perera-month3-loading-scripts/.ipynb_checkpoints/
+.ipynb_checkpoints/
+*.ipynb~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive — never commit credentials
+.env.local
+secrets.yaml

@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  spark:
+    image: jupyter/pyspark-notebook:latest
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    environment:
+      - PYSPARK_SUBMIT_ARGS=--packages io.delta:delta-spark_2.12:3.1.0,org.apache.hadoop:hadoop-aws:3.3.4 pyspark-shell
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    networks:
+      - month1_default
+
+  superset:
+    image: apache/superset:latest
+    ports:
+      - "8088:8088"
+    environment:
+      - SUPERSET_SECRET_KEY=supersecretkey123
+    volumes:
+      - superset_home:/app/superset_home
+    networks:
+      - month1_default
+
+networks:
+  month1_default:
+    external: true
+
+volumes:
+  superset_home:
